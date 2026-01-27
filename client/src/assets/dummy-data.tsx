@@ -3,18 +3,18 @@ import { UploadIcon, VideoIcon, ZapIcon } from 'lucide-react';
 export const featuresData = [
     {
         icon: <UploadIcon className="w-6 h-6" />,
-        title: 'Discovery & Planning',
-        desc: 'We understand your goals, audience and challenges to craft a clear, actionable strategy.'
+        title: 'Smart Upload',
+        desc: 'Drag and drop assets. AI auto-optimizes formats and sizes for ads.'
     },
     {
         icon: <ZapIcon className="w-6 h-6" />,
-        title: 'Design & Development',
-        desc: 'High-quality design and scalable development focused on performance and usability.'
+        title: 'Instant Generation',
+        desc: 'Generate high-quality ad creatives instantly with AI - no setup, no delays, just results in seconds.'
     },
     {
         icon: <VideoIcon className="w-6 h-6" />,
-        title: 'Launch & Growth',
-        desc: 'We launch, optimize and continuously improve to drive measurable business growth.'
+        title: 'Video Synthesis',
+        desc: 'AI-powered video synthesis for fast, high-impact ad creation..'
     }
 ];
 
@@ -22,7 +22,7 @@ export const plansData = [
     {
         id: 'starter',
         name: 'Starter',
-        price: '$499',
+        price: '₹499',
         desc: 'Best for early-stage startups.',
         credits: 'One-time',
         features: [

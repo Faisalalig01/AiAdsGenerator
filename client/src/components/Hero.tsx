@@ -1,29 +1,28 @@
-import { ArrowRightIcon, PlayIcon, ZapIcon, CheckIcon } from 'lucide-react';
-import { PrimaryButton, GhostButton } from './Buttons';
-import { motion } from 'framer-motion';
+import { ArrowRightIcon, PlayIcon, ZapIcon, CheckIcon } from "lucide-react";
+import { PrimaryButton, GhostButton } from "./Buttons";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-
     const trustedUserImages = [
-        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=50',
-        'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=50',
-        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop'
+        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=50",
+        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=50",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop",
     ];
 
-    const mainImageUrl = 'https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=1600&auto=format&fit=crop';
-
+    const mainImageUrl =
+    "https://images.unsplash.com/photo-1582005450386-52b25f82d9bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
     const galleryStripImages = [
-        'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=100',
-        'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=100',
-        'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=100',
+        "https://images.unsplash.com/photo-1568359415705-47e98104af04?q=80&w=100&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556565681-306458ef93cd?q=80&w=100&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1752650735682-5d5981bae57d?q=80&w=100&auto=format&fit=crop",
     ];
 
     const trustedLogosText = [
-        'Startups',
-        'Scale-ups',
-        'Founders',
-        'Global teams',
-        'Creative brands'
+        "Google Ads",
+        "Meta Ads",
+        "Facebook Ads",
+        "Instagram Ads",
+        "LinkedIn Ads",
     ];
 
     return (
@@ -32,11 +31,18 @@ export default function Hero() {
                 <div className="max-w-6xl mx-auto px-4 min-h-screen max-md:w-screen max-md:overflow-hidden pt-32 md:pt-26 flex items-center justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                         <div className="text-left">
-                            <motion.a href="https://prebuiltui.com/tailwind-templates?ref=pixel-forge" className="inline-flex items-center gap-3 pl-3 pr-4 py-1.5 rounded-full bg-white/10 mb-6 justify-start"
+                            <motion.a
+                                href="https://prebuiltui.com/tailwind-templates?ref=pixel-forge"
+                                className="inline-flex items-center gap-3 pl-3 pr-4 py-1.5 rounded-full bg-white/10 mb-6 justify-start"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 250,
+                                    damping: 70,
+                                    mass: 1,
+                                }}
                             >
                                 <div className="flex -space-x-2">
                                     {trustedUserImages.map((src, i) => (
@@ -51,63 +57,92 @@ export default function Hero() {
                                     ))}
                                 </div>
                                 <span className="text-xs text-gray-200/90">
-                                    Trusted by brands & founders worldwide
+                                    Trusted by 10,000+ creators
                                 </span>
                             </motion.a>
 
-                            <motion.h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 max-w-xl"
+                            <motion.h1
+                                className="text-4xl md:text-5xl font-bold leading-tight mb-6 max-w-xl"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 250,
+                                    damping: 70,
+                                    mass: 1,
+                                    delay: 0.1,
+                                }}
                             >
-                                We design & build <br />
+                                Create viral Ads <br />
                                 <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 to-indigo-400">
-                                    high-impact digital experiences
+                                    in seconds
                                 </span>
                             </motion.h1>
 
-                            <motion.p className="text-gray-300 max-w-lg mb-8"
+                            <motion.p
+                                className="text-gray-300 max-w-lg mb-8"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.2 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 250,
+                                    damping: 70,
+                                    mass: 1,
+                                    delay: 0.2,
+                                }}
                             >
-                                A creative digital agency helping startups and businesses grow through
-                                thoughtful design, scalable development and performance-driven strategy.
+                                Upload product images and a model photo - our AI instantly
+                                porduces professional lifestylr imagery and short-form videos
+                                optimized for commercials & Reels.
                             </motion.p>
 
-                            <motion.div className="flex flex-col sm:flex-row items-center gap-4 mb-8"
+                            <motion.div
+                                className="flex flex-col sm:flex-row items-center gap-4 mb-8"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.3 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 250,
+                                    damping: 70,
+                                    mass: 1,
+                                    delay: 0.3,
+                                }}
                             >
                                 <a href="/" className="w-full sm:w-auto">
                                     <PrimaryButton className="max-sm:w-full py-3 px-7">
-                                        Start your project
+                                        Start generating - it's free
                                         <ArrowRightIcon className="size-4" />
                                     </PrimaryButton>
                                 </a>
 
                                 <GhostButton className="max-sm:w-full max-sm:justify-center py-3 px-5">
                                     <PlayIcon className="size-4" />
-                                    View our work
+                                    Watch demo
                                 </GhostButton>
                             </motion.div>
 
-                            <motion.div className="flex sm:inline-flex overflow-hidden items-center max-sm:justify-center text-sm text-gray-200 bg-white/10 rounded"
+                            <motion.div
+                                className="flex sm:inline-flex overflow-hidden items-center max-sm:justify-center text-sm text-gray-200 bg-white/10 rounded"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 250,
+                                    damping: 70,
+                                    mass: 1,
+                                    delay: 0.1,
+                                }}
                             >
                                 <div className="flex items-center gap-2 p-2 px-3 sm:px-6.5 hover:bg-white/3 transition-colors">
                                     <ZapIcon className="size-4 text-sky-500" />
                                     <div>
-                                        <div>Strategy-led execution</div>
+                                        <div>Seconds to create</div>
                                         <div className="text-xs text-gray-400">
-                                            Focused on growth & results
+                                            Optimized social formats
                                         </div>
                                     </div>
                                 </div>
@@ -117,9 +152,9 @@ export default function Hero() {
                                 <div className="flex items-center gap-2 p-2 px-3 sm:px-6.5 hover:bg-white/3 transition-colors">
                                     <CheckIcon className="size-4 text-cyan-500" />
                                     <div>
-                                        <div>Full-service delivery</div>
+                                        <div>Commercial rights</div>
                                         <div className="text-xs text-gray-400">
-                                            Design, dev & marketing
+                                            Use anywhere, no fuss
                                         </div>
                                     </div>
                                 </div>
@@ -127,11 +162,18 @@ export default function Hero() {
                         </div>
 
                         {/* Right: modern mockup card */}
-                        <motion.div className="mx-auto w-full max-w-lg"
+                        <motion.div
+                            className="mx-auto w-full max-w-lg"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
-                            transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.5 }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 250,
+                                damping: 70,
+                                mass: 1,
+                                delay: 0.5,
+                            }}
                         >
                             <motion.div className="rounded-3xl overflow-hidden border border-white/6 shadow-2xl bg-linear-to-b from-black/50 to-transparent">
                                 <div className="relative aspect-16/10 bg-gray-900">
@@ -142,13 +184,13 @@ export default function Hero() {
                                     />
 
                                     <div className="absolute left-4 top-4 px-3 py-1 rounded-full bg-black/15 backdrop-blur-sm text-xs">
-                                        Branding • Web • Growth
+                                        Social-ready • 9:16 & 16:9
                                     </div>
 
                                     <div className="absolute right-4 bottom-4">
                                         <button className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-white/6 backdrop-blur-sm hover:bg-white/10 transition focus:outline-none">
                                             <PlayIcon className="size-4" />
-                                            <span className="text-xs">See case study</span>
+                                            <span className="text-xs">Preview</span>
                                         </button>
                                     </div>
                                 </div>
@@ -161,7 +203,13 @@ export default function Hero() {
                                         initial={{ y: 20, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         viewport={{ once: true }}
-                                        transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.1 + i * 0.1 }}
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 250,
+                                            damping: 70,
+                                            mass: 1,
+                                            delay: 0.1 + i * 0.1,
+                                        }}
                                         className="w-14 h-10 rounded-lg overflow-hidden border border-white/6"
                                     >
                                         <img
@@ -171,18 +219,25 @@ export default function Hero() {
                                         />
                                     </motion.div>
                                 ))}
-                                <motion.div className="text-sm text-gray-400 ml-2 flex items-center gap-2"
+                                <motion.div
+                                    className="text-sm text-gray-400 ml-2 flex items-center gap-2"
                                     initial={{ y: 60, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
-                                    transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.2 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 250,
+                                        damping: 70,
+                                        mass: 1,
+                                        delay: 0.2,
+                                    }}
                                 >
                                     <div className="relative flex h-3.5 w-3.5 items-center justify-center">
                                         <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300" />
 
                                         <span className="relative inline-flex size-2 rounded-full bg-green-600" />
                                     </div>
-                                    20+ completed projects
+                                    +20 more
                                 </motion.div>
                             </div>
                         </motion.div>
@@ -191,7 +246,8 @@ export default function Hero() {
             </section>
 
             {/* LOGO MARQUEE */}
-            <motion.section className="border-y border-white/6 bg-white/1 max-md:mt-10"
+            <motion.section
+                className="border-y border-white/6 bg-white/1 max-md:mt-10"
                 initial={{ y: 60, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -214,4 +270,4 @@ export default function Hero() {
             </motion.section>
         </>
     );
-};
+}
