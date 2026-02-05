@@ -26,39 +26,40 @@ export const plansData = [
         desc: 'Best for early-stage startups.',
         credits: 'One-time',
         features: [
-            'Project discovery & planning',
-            'UI/UX design',
-            'Basic website development',
-            '1 revision round',
+            'AI ad copy & creative generation',
+            'Social media–ready ad formats',
+            '1 revision per ad',
+            'Basic campaign guidance',
             'Email support'
         ]
     },
     {
         id: 'pro',
-        name: 'Growth',
-        price: '$1,499',
-        desc: 'Growing teams and businesses.',
-        credits: 'Monthly',
+        name: 'Pro',
+        price: '₹1,499',
+        desc: 'Ideal for growing brands running multiple ad campaigns',
+        credits: '80',
         features: [
             'Everything in Starter',
-            'Advanced UI/UX design',
-            'Custom development',
-            'Performance optimization',
-            'Priority support'
+            'Multiple ad variations per campaign',
+            'Platform-optimized creatives (Meta, Google, Reels)',
+            'No Watermark',
+            'Priority email support'
         ],
         popular: true
     },
     {
         id: 'ultra',
-        name: 'Scale',
-        price: '$3,999',
+        name: 'Ultra',
+        price: '₹3,999',
         desc: 'For brands ready to scale fast.',
-        credits: 'Custom',
+        credits: '300',
         features: [
-            'Everything in Growth',
-            'Dedicated project manager',
-            'Ongoing optimization',
-            'Marketing & growth support',
+            'Everything in Pro',
+            'High-volume ad generation',
+            'Brand voice & style consistency',
+            'Multi-platform export (image & video)',
+            'Unlimited revisions within credits',
             'Chat + Email support'
         ]
     }
@@ -66,21 +67,28 @@ export const plansData = [
 
 export const faqData = [
     {
-        question: 'What services does your agency provide?',
-        answer: 'We offer end-to-end digital services including brand strategy, UI/UX design, web and app development and growth-focused marketing solutions.'
+        question: 'What are credits?',
+        answer: 'Credits represent your allocated AI usage and are applied whenever ads are generated on the platform.'
     },
     {
-        question: 'Do you work with startups or only large companies?',
-        answer: 'We work with startups, growing businesses and established brands. Our process is flexible and tailored to match your goals and scale.'
+        question: 'How are credits calculated?',
+        answer: 'Credit consumption is determined by the AI processing required, including prompts, generated copy, and creative outputs. More complex workflows consume additional credits.'
     },
     {
-        question: 'How long does a typical project take?',
-        answer: 'Project timelines vary by scope, but most projects take between 2–6 weeks. We provide a clear timeline after the discovery phase.'
+        question: 'What happens when my credits are exhausted?',
+        answer: 'You may seamlessly upgrade your plan or purchase additional credits to maintain uninterrupted access.'
     },
     {
-        question: 'Do you offer ongoing support after launch?',
-        answer: 'Yes. We offer maintenance, optimization and growth support packages to ensure your product continues to perform and evolve.'
-    }
+        question: 'Do credits expire?',
+        answer: 'Credits are one-time allocations and remain valid until fully utilized.'
+    },
+    {
+        question: 'Why do some ads consume more credits?',
+        answer: 'Ad complexity—such as longer copy, multiple variants, images, or video generation—requires greater AI resources and therefore higher credit usage.'
+    },{
+        question: 'Are credits shared across features?',
+        answer: 'Yes. All platform capabilities, including ad copy, creative assets, and exports, draw from a unified credit balance.'
+    },
 ];
 
 export const footerLinks = [
