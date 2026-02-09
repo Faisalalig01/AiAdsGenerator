@@ -88,15 +88,15 @@ export const faqData = [
     },{
         question: 'Are credits shared across features?',
         answer: 'Yes. All platform capabilities, including ad copy, creative assets, and exports, draw from a unified credit balance.'
-    },
+     },
 ];
 
 export const footerLinks = [
     {
-        title: "Company",
+        title: "Quick Links",
         links: [
             { name: "Home", url: "#" },
-            { name: "Services", url: "#" },
+            { name: "Features", url: "#" },
             { name: "Work", url: "#" },
             { name: "Contact", url: "#" }
         ]
